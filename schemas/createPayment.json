@@ -22,7 +22,8 @@
                     "required": [
                         "type",
                         "id"
-                    ]
+                    ],
+                    "additionalProperties": false
                 }
             },
             "required": [
