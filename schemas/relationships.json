@@ -791,6 +791,136 @@
                         "additionalProperties": false
                     }
                 }
+            },
+            "ReturnedRelationships": {
+                "type": "object",
+                "properties": {
+                    "returned": {
+                        "type": "object",
+                        "title": "Returned Transaction Relationship",
+                        "properties": {
+                            "data": {
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "type": "string",
+                                        "default": "transaction"
+                                    },
+                                    "id": {
+                                        "$ref": "../types.json#/components/schemas/Identifier"
+                                    }
+                                },
+                                "required": ["type", "id"],
+                                "additionalProperties": false
+                            }
+                        },
+                        "required": ["data"],
+                        "additionalProperties": false
+                    }
+                }
+            },
+            "RelatedTransaction": {
+                "type": "object",
+                "title": "Related Transaction Relationship",
+                "properties": {
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string",
+                                "default": "transaction"
+                            },
+                            "id": {
+                                "$ref": "../types.json#/components/schemas/Identifier"
+                            }
+                        },
+                        "required": ["type", "id"],
+                        "additionalProperties": false
+                    }
+                },
+                "required": ["data"],
+                "additionalProperties": false
+            },
+            "DisputedTransactionRelationship": {
+                "type": "object",
+                "properties": {
+                    "disputedTransaction": {
+                        "type": "object",
+                        "title": "Disputed Transaction Relationship",
+                        "properties": {
+                            "data": {
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "type": "string",
+                                        "default": "transaction"
+                                    },
+                                    "id": {
+                                        "$ref": "../types.json#/components/schemas/Identifier"
+                                    }
+                                },
+                                "required": ["type", "id"],
+                                "additionalProperties": false
+                            }
+                        },
+                        "required": ["data"],
+                        "additionalProperties": false
+                    }
+                }
+            },
+            "ChargebackRelationship": {
+                "type": "object",
+                "properties": {
+                    "chargeback": {
+                        "type": "object",
+                        "title": "Chargeback Relationship",
+                        "properties": {
+                            "data": {
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "type": "string",
+                                        "default": "chargeback"
+                                    },
+                                    "id": {
+                                        "$ref": "../types.json#/components/schemas/Identifier"
+                                    }
+                                },
+                                "required": ["type", "id"],
+                                "additionalProperties": false
+                            }
+                        },
+                        "required": ["data"],
+                        "additionalProperties": false
+                    }
+                }
+            },
+            "ReceiverAccountRelationship": {
+                "type": "object",
+                "properties": {
+                    "receiverAccount": {
+                        "type": "object",
+                        "title": "Receiver Account Relationship",
+                        "properties": {
+                            "data": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "$ref": "../types.json#/components/schemas/Identifier"
+                                    },
+                                    "type": {
+                                        "type": "string",
+                                        "enum": ["account"]
+                                    }
+                                },
+                                "required": ["id", "type"],
+                                "additionalProperties": false
+                            }
+                        },
+                        "required": ["data"],
+                        "additionalProperties": false
+                    }
+                }
             }
         }
     }
