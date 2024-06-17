@@ -860,6 +860,11 @@
             "DefaultContentType": {
                 "type": "string",
                 "enum": ["application/vnd.api+json"]
+            },
+            "IdempotencyKey": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 255
             }
         }
     }
