@@ -131,7 +131,7 @@
                                 "$ref": "./payment.json#/components/schemas/PaymentCounterparty"
                             },
                             "idempotencyKey": {
-                                "type": "string"
+                                "$ref": "../types.json#/components/schemas/IdempotencyKey"
                             },
                             "sameDay": {
                                 "type": "boolean"
@@ -187,7 +187,7 @@
                                 "type": "boolean"
                             },
                             "idempotencyKey": {
-                                "type": "string"
+                                "$ref": "../types.json#/components/schemas/IdempotencyKey"
                             },
                             "tags": {
                                 "$ref": "../types.json#/components/schemas/Tags"
@@ -236,7 +236,7 @@
                                 "enum": ["Debit", "Credit"]
                             },
                             "idempotencyKey": {
-                                "type": "string"
+                                "$ref": "../types.json#/components/schemas/IdempotencyKey"
                             },
                             "tags": {
                                 "$ref": "../types.json#/components/schemas/Tags"
@@ -293,7 +293,7 @@
                                 "type": "string"
                             },
                             "idempotencyKey": {
-                                "type": "string"
+                                "$ref": "../types.json#/components/schemas/IdempotencyKey"
                             },
                             "tags": {
                                 "$ref": "../types.json#/components/schemas/Tags"
@@ -337,7 +337,7 @@
                                 "$ref": "./payment.json#/components/schemas/WirePaymentCounterparty"
                             },
                             "idempotencyKey": {
-                                "type": "string"
+                                "$ref": "../types.json#/components/schemas/IdempotencyKey"
                             },
                             "tags": {
                                 "$ref": "../types.json#/components/schemas/Tags"
@@ -368,7 +368,7 @@
                                 "type": "integer"
                             },
                             "idempotencyKey": {
-                                "type": "string"
+                                "$ref": "../types.json#/components/schemas/IdempotencyKey"
                             },
                             "tags": {
                                 "$ref": "../types.json#/components/schemas/Tags"
