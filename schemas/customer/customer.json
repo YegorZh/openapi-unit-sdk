@@ -315,7 +315,12 @@
                         "$ref": "../types.json#/components/schemas/Identifier"
                     },
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "enum": [
+                            "individualCustomer",
+                            "businessCustomer",
+                            "trustCustomer"
+                        ]
                     }
                 },
                 "discriminator": {

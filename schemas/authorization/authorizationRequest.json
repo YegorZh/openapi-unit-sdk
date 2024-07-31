@@ -317,7 +317,12 @@
                 "type": "object",
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "enum": [
+                            "purchaseAuthorizationRequest",
+                            "cardTransactionAuthorizationRequest",
+                            "atmAuthorizationRequest"
+                        ]
                     },
                     "id": {
                         "$ref": "../types.json#/components/schemas/Identifier"

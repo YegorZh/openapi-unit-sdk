@@ -642,7 +642,13 @@
                 "type": "object",
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "enum": [
+                            "achPayment",
+                            "bookPayment",
+                            "wirePayment",
+                            "billPayment"
+                        ]
                     },
                     "id": {
                         "$ref": "../types.json#/components/schemas/Identifier"

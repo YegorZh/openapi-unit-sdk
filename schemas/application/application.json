@@ -746,7 +746,12 @@
                         "$ref": "../types.json#/components/schemas/Identifier"
                     },
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "enum": [
+                            "individualApplication",
+                            "businessApplication",
+                            "trustApplication"
+                        ]
                     }
                 },
                 "discriminator": {
