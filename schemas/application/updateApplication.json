@@ -142,28 +142,6 @@
                 "additionalProperties": false,
                 "required": ["type", "attributes"]
             },
-            "UpdateTrustApplication": {
-                "title": "Update Trust Application",
-                "type": "object",
-                "properties": {
-                    "type": {
-                        "type": "string",
-                        "enum": ["trustApplication"],
-                        "default": "trustApplication"
-                    },
-                    "attributes": {
-                        "type": "object",
-                        "properties": {
-                            "tags": {
-                                "$ref": "../types.json#/components/schemas/Tags"
-                            }
-                        },
-                        "additionalProperties": false
-                    }
-                },
-                "additionalProperties": false,
-                "required": ["type", "attributes"]
-            },
             "UpdateSoleProprietorApplication": {
                 "title": "Update Individual Application",
                 "type": "object",
@@ -218,9 +196,6 @@
                             },
                             {
                                 "$ref": "#/components/schemas/UpdateIndividualApplication"
-                            },
-                            {
-                                "$ref": "#/components/schemas/UpdateTrustApplication"
                             }
                         ]
                     }
