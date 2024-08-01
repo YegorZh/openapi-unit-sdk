@@ -206,6 +206,7 @@
                 "properties": {
                     "type": {
                         "type": "string",
+                        "enum": ["individualApplication"],
                         "default": "individualApplication"
                     },
                     "attributes": {
@@ -297,6 +298,7 @@
                 "properties": {
                     "type": {
                         "type": "string",
+                        "enum": ["individualApplication"],
                         "default": "individualApplication"
                     },
                     "attributes": {
@@ -417,6 +419,7 @@
                 "properties": {
                     "type": {
                         "type": "string",
+                        "enum": ["businessApplication"],
                         "default": "businessApplication"
                     },
                     "attributes": {
@@ -544,6 +547,7 @@
                 "properties": {
                     "type": {
                         "type": "string",
+                        "enum": ["trustApplication"],
                         "default": "trustApplication"
                     },
                     "attributes": {

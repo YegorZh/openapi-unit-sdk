@@ -7,6 +7,7 @@
                 "properties": {
                     "type": {
                         "type": "string",
+                        "enum": ["approveAuthorizationRequest"],
                         "default": "approveAuthorizationRequest"
                     },
                     "attributes": {
@@ -33,6 +34,7 @@
                 "properties": {
                     "type": {
                         "type": "string",
+                        "enum": ["declineAuthorizationRequest"],
                         "default": "declineAuthorizationRequest"
                     },
                     "attributes": {

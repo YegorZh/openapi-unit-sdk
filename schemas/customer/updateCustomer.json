@@ -20,7 +20,9 @@
                 "type": "object",
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "enum": ["individualCustomer"],
+                        "default": "individualCustomer"
                     },
                     "attributes": {
                         "type": "object",
@@ -66,7 +68,9 @@
                 "type": "object",
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "enum": ["businessCustomer"],
+                        "default": "businessCustomer"
                     },
                     "attributes": {
                         "type": "object",
@@ -162,29 +166,36 @@
                 "type": "object",
                 "title": "Archive Customer Request",
                 "properties": {
-                    "type": {
-                        "type": "string",
-                        "enum": ["archiveCustomer"]
-                    },
-                    "attributes": {
+                    "data": {
                         "type": "object",
                         "properties": {
-                            "reason": {
+                            "type": {
                                 "type": "string",
-                                "enum": [
-                                    "Inactive",
-                                    "FraudACHActivity",
-                                    "FraudCardActivity",
-                                    "FraudCheckActivity",
-                                    "FraudApplicationHistory",
-                                    "FraudAccountActivity",
-                                    "FraudClientIdentified",
-                                    "FraudLinkedToFraudulentCustomer"
-                                ]
+                                "enum": ["archiveCustomer"],
+                                "default": "archiveCustomer"
+                            },
+                            "attributes": {
+                                "type": "object",
+                                "properties": {
+                                    "reason": {
+                                        "type": "string",
+                                        "enum": [
+                                            "Inactive",
+                                            "FraudACHActivity",
+                                            "FraudCardActivity",
+                                            "FraudCheckActivity",
+                                            "FraudApplicationHistory",
+                                            "FraudAccountActivity",
+                                            "FraudClientIdentified",
+                                            "FraudLinkedToFraudulentCustomer"
+                                        ]
+                                    }
+                                }
                             }
                         }
                     }
-                }
+                },
+                "required": ["type", "attributes"]
             }
         }
     }

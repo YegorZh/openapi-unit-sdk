@@ -16,6 +16,7 @@
                                 "properties": {
                                     "type": {
                                         "type": "string",
+                                        "enum": ["creditAccount"],
                                         "default": "creditAccount"
                                     },
                                     "id": {
@@ -83,6 +84,7 @@
                                 "properties": {
                                     "type": {
                                         "type": "string",
+                                        "enum": ["org"],
                                         "default": "org"
                                     },
                                     "id": {
@@ -205,13 +207,6 @@
                     {
                         "type": "object",
                         "properties": {
-                            "id": {
-                                "$ref": "../../types.json#/components/schemas/Identifier"
-                            },
-                            "type": {
-                                "type": "string",
-                                "default": "recurringAchRepayment"
-                            },
                             "attributes": {
                                 "type": "object",
                                 "properties": {
@@ -277,13 +272,6 @@
                     {
                         "type": "object",
                         "properties": {
-                            "id": {
-                                "$ref": "../../types.json#/components/schemas/Identifier"
-                            },
-                            "type": {
-                                "type": "string",
-                                "default": "recurringBookRepayment"
-                            },
                             "attributes": {
                                 "type": "object",
                                 "properties": {
@@ -344,13 +332,6 @@
                     {
                         "type": "object",
                         "properties": {
-                            "id": {
-                                "$ref": "../../types.json#/components/schemas/Identifier"
-                            },
-                            "type": {
-                                "type": "string",
-                                "default": "recurrinCapitalPartnerAchRepayment"
-                            },
                             "attributes": {
                                 "type": "object",
                                 "properties": {
@@ -416,13 +397,6 @@
                     {
                         "type": "object",
                         "properties": {
-                            "id": {
-                                "$ref": "../../types.json#/components/schemas/Identifier"
-                            },
-                            "type": {
-                                "type": "string",
-                                "default": "recurringBookRepayment"
-                            },
                             "attributes": {
                                 "type": "object",
                                 "properties": {
